@@ -10,7 +10,7 @@ class ColorChangerApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
+     
       home: ColorChanger(),
     );
   }
@@ -73,20 +73,7 @@ class _ColorChangerState extends State<ColorChanger> {
     });
   }
 
-  String direction() {
-    switch (alignmentIndex) {
-      case 0:
-        return "Horizontal";
-      case 1:
-        return "right-left";
-      case 2:
-        return "vertical";
-      case 3:
-        return "left-right";
-      default:
-        return "Unknown";
-    }
-  }
+  
 
   @override
   Widget build(BuildContext context) {
@@ -125,6 +112,20 @@ class _ColorChangerState extends State<ColorChanger> {
         ),
       ),
     );
+  }
+  String direction() {
+    switch (alignmentIndex) {
+      case 0:
+        return "Horizontal";
+      case 1:
+        return "right-left";
+      case 2:
+        return "vertical";
+      case 3:
+        return "left-right";
+      default:
+        return "Unknown";
+    }
   }
 }
 
